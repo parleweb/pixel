@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.min.js"></script>
+
+    <style>
+      .wrapper-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+
+      .wrapper {
+        border: 1px solid red;
+        xwidth: 600px;
+        margin: 1rem;
+      }
+      .collection-style1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+      }
+      .collection-style1 .one {
+        grid-column: 1 / 3;
+        grid-row: 1;
+      }
+      .collection-style1 .two {
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+      }
+      .collection-style1 .three {
+        grid-column: 1;
+        grid-row: 2 / 5;
+      }
+      .collection-style1 .four {
+        grid-column: 3;
+        grid-row: 3;
+      }
+      .collection-style1 .five {
+        grid-column: 2;
+        grid-row: 4;
+      }
+      .collection-style1 .six {
+        grid-column: 3;
+        grid-row: 4;
+      }
+      .collection-style1 > div {
+        opacity: hidden;
+        border: 1px solid black;
+      }
+      .collection-style2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+
+        grid-auto-rows: minmax(100px, auto);
+      }
+      .collection-style2 > div {
+        opacity: 0;
+        border: 1px solid black;
+      }
+      .pixel1 {
+        display: flex;
+      }
+      .pixel1 > div {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+      .pixel1 img {
+        max-width: 400px;
+      }
+    </style>
+    <script src="anime/lib/anime.min.js"></script>
+  </head>
+  <body>
+    <h1>Pixel Screen One</h1>
+
+    <div class="pixel1">
+      <div>
+        <h2>Mon Champ lexical</h2>
+        <ul>
+          <li>une dimension largeur x longueur</li>
+          <li>une grille</li>
+          <li>un titre</li>
+          <li>un menu contextuel</li>
+          <li>des croquis</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Image</h2>
+        <img src="pixel.img/pixel001.jpg" />
+      </div>
+      <div>
+        <h2>Dialogue</h2>
+        <p>
+          <span>lundi 19 novembre</span> Recontre autour de la transition
+          digitale
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
